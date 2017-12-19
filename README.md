@@ -93,3 +93,18 @@ $ git push <repository> <refspec>...
 ```
 $ git push -u origin master
 ```
+
+#### 8.clone、pull
+
+clone 下来的代码，push 的时候不用输入远程仓库名和分支
+```
+$ git clone <repository> <directory>
+
+$ git push
+```
+
+#### 9.合并修改记录
+
+在执行```pull```之后，进行下一次```push```之前，如果其他人进行了推送内容到远程数据库的话，那么你的 push 将会被拒绝。
+
+这是因为，如果不进行合并就试图覆盖已有的变更记录的话，其他人的 push 的变更就会消失。
